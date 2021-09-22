@@ -9,7 +9,7 @@ function verbs(verb, pronoun) {
     let verbEnd = verb.slice(-3, verb.length);
     let verb2 = verb.slice(0, -3);
    
-    if( verbEnd === "ать" ||  verbEnd === "оть" || verbEnd === "уть") {
+    if( verbEnd === "ать" ||  verbEnd === "еть" || verbEnd === "ять" || verbEnd === "уть" || verbEnd === "ють" || verbEnd === "ыть" || verbEnd === "оть") {
   
   
     if (pronoun === "я") {
@@ -45,7 +45,7 @@ function verbs(verb, pronoun) {
   
   
       if (pronoun === "я") {
-        console.log(verb2 + "ю");
+        console.log(verb2 + "у(ю)");
       }
     
       if (pronoun === "ты") {
@@ -57,54 +57,24 @@ function verbs(verb, pronoun) {
       }
     
       if (pronoun === "она") {
-        console.log(verb2 + "им");
-      }
-    
-      if (pronoun === "мы") {
-        console.log(verb2 + "ите");
-      }
-    
-      if (pronoun === "вы") {
-        console.log(verb2 + "ят");
-      }
-    
-      if (pronoun === "они") {
-        console.log(verb2 + "ят");
-      }
-    }
-  
-    if( verbEnd === "еть") {
-  
-  
-      if (pronoun === "я") {
-        console.log(verb2 + "ю");
-      }
-    
-      if (pronoun === "ты") {
-        console.log(verb2 + "ишь");
-      }
-    
-      if (pronoun === "он") {
         console.log(verb2 + "ит");
       }
     
-      if (pronoun === "она") {
+      if (pronoun === "мы") {
         console.log(verb2 + "им");
       }
     
-      if (pronoun === "мы") {
-        console.log(verb2 + "ите");
-      }
-    
       if (pronoun === "вы") {
-        console.log(verb2 + "ят");
+        console.log(verb2 + "ите");
       }
     
       if (pronoun === "они") {
         console.log(verb2 + "ят");
       }
     }
+  
+    
   }
   
-  verbs("лететь", "мы");
+  verbs("сушить", "я");
   
