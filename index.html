@@ -91,6 +91,24 @@
         );
         ctx_damages.stroke();
       }
+
+      function drawCircleMouseDown(e){
+   circle = {
+       startX : e.offsetX - circle_rect.left,
+       startY : e.offsetY - circle_rect.top,
+        firstk : 10
+   };
+   circle_drag = true;
+   circles.push(circle);
+  circle_canvas_update = true;
+}
+function drawCircleCanvas(){
+ ctx_damages.setTransform(1,0,0,1,0,0);
+ ctx_damages.clearRect(0, 0, damages_canvas.width, damages_canvas.height);
+ ctx_damages.fillStyle = "transparent"; // Color
+ ctx_damages.strokeStyle = markerColor; // Color
+ circles.forEach(drawCircle)
+  } 
     </script>
   </body>
 </html>
