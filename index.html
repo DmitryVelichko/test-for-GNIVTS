@@ -23,6 +23,16 @@
       damages_canvas.addEventListener("mousedown", drawCircleMouseDown, false);
       damages_canvas.addEventListener("mouseup", drawCircleMouseUp, false);
       damages_canvas.addEventListener("mousemove", drawCircleMouseMove, false);
+      requestAnimationFrame(updateCircleCanvas);
+
+      function updateCircleCanvas() {
+        if (circle_canvas_update) {
+          drawCircleCanvas();
+          circle_canvas_update = false;
+        }
+
+        requestAnimationFrame(updateCircleCanvas);
+      }
     </script>
   </body>
 </html>
