@@ -108,7 +108,21 @@ function drawCircleCanvas(){
  ctx_damages.fillStyle = "transparent"; // Color
  ctx_damages.strokeStyle = markerColor; // Color
  circles.forEach(drawCircle)
-  } 
+  } function drawCircleMouseUp(){
+   circle_drag = false;
+  circle_canvas_update = true;
+}
+function drawCircleMouseMove(e){ // tätä uusi
+  if(circle_drag){
+
+   console.log(e.offsetX -circle.startX );
+   circle.firstk =Math.hypot((e.offsetX -circle.startX),(e.offsetY -
+  circle.startY))
+
+
+     circle_canvas_update = true;
+ }
+ }
     </script>
   </body>
 </html>
