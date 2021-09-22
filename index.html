@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <script src='index.js'>
-
-    </script>
+  </head>
+  <body>
+    <script src="index.js"></script>
 
     <script>
+      var b = 0.55191502449;
+      var damages_canvas = document.getElementById("damages-area");
+      var ctx_damages = damages_canvas.getContext("2d");
+      var circle_rect = damages_canvas.getBoundingClientRect();
+      var circles = [];
+      var markerColor = "#f00";
+      var circle_drag = false;
+      var circle_canvas_update = true;
 
-var b=0.55191502449;
- var damages_canvas = document.getElementById("damages-area");
- var ctx_damages = damages_canvas.getContext("2d");
- var circle_rect = damages_canvas.getBoundingClientRect();
- var circles = [];
- var markerColor = "#f00";
- var circle_drag = false;
- var circle_canvas_update = true;
+      damages_canvas.addEventListener("mousedown", drawCircleMouseDown, false);
+      damages_canvas.addEventListener("mouseup", drawCircleMouseUp, false);
+      damages_canvas.addEventListener("mousemove", drawCircleMouseMove, false);
     </script>
-</body>
+  </body>
 </html>
