@@ -45,7 +45,7 @@ function verbs(verb, pronoun) {
   
   
       if (pronoun === "я") {
-        console.log(verb2 + "у(ю)");
+        console.log(verb2 + "у");
       }
     
       if (pronoun === "ты") {
