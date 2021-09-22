@@ -33,6 +33,64 @@
 
         requestAnimationFrame(updateCircleCanvas);
       }
+
+      function drawCircle(circle) {
+        var k = circle.firstk,
+          siiry = circle.startY,
+          siirx = circle.startX;
+
+        ctx_damages.clearRect(
+          0,
+          0,
+          damages_canvas.width,
+          damages_canvas.height
+        );
+        ctx_damages.beginPath();
+
+        ctx_damages.moveTo(0 * k + siirx, 1 * k + siiry);
+        ctx_damages.bezierCurveTo(
+          b * k + siirx,
+          1 * k + siiry,
+          1 * k + siirx,
+          b * k + siiry,
+          1 * k + siirx,
+          0 + siiry
+        );
+        ctx_damages.moveTo(
+          0 * k - 2 * 0 * k + siirx,
+          1 * k - 2 * 1 * k + siiry
+        );
+        ctx_damages.bezierCurveTo(
+          b * k - 2 * b * k + siirx,
+          1 * k - 2 * 1 * k + siiry,
+          1 * k - 2 * 1 * k + siirx,
+          b * k - 2 * b * k + siiry,
+          1 * k - 2 * 1 * k + siirx,
+          0 - 2 * 0 + siiry
+        );
+        ctx_damages.moveTo(0 * k + siirx, 1 * k + siiry);
+        ctx_damages.bezierCurveTo(
+          b * k - 2 * b * k + siirx,
+          1 * k + siiry,
+          1 * k - 2 * 1 * k + siirx,
+          b * k + siiry,
+          1 * k - 2 * 1 * k + siirx,
+          0 - 2 * 0 + siiry
+        );
+        ctx_damages.moveTo(
+          0 * k - 2 * 0 * k + siirx,
+          1 * k - 2 * 1 * k + siiry
+        );
+        ctx_damages.bezierCurveTo(
+          b * k + siirx,
+          1 * k - 2 * 1 * k + siiry,
+          1 * k + siirx,
+          b * k - 2 * b * k + siiry,
+          1 * k + siirx,
+          0 + siiry
+        );
+        ctx_damages.stroke();
+      }
     </script>
   </body>
 </html>
