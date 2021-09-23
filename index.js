@@ -101,7 +101,7 @@ function verbs(verb, pronoun) {
     }
 
     if (pronoun === "ты") {
-      return "гонешь";
+      return "гонишь";
     }
 
     if (pronoun === "он") {
@@ -117,11 +117,197 @@ function verbs(verb, pronoun) {
     }
 
     if (pronoun === "вы") {
-      return "гонете";
+      return "гоните";
     }
 
     if (pronoun === "они") {
       return "гонят";
+    }
+  }
+
+  // Условие для исключений
+  if (verb === "терпеть") {
+    if (pronoun === "я") {
+      return "терплю";
+    }
+
+    if (pronoun === "ты") {
+      return "терпешь";
+    }
+
+    if (pronoun === "он") {
+      return "терпит";
+    }
+
+    if (pronoun === "она") {
+      return "терпит";
+    }
+
+    if (pronoun === "мы") {
+      return "терпим";
+    }
+
+    if (pronoun === "вы") {
+      return "терпите";
+    }
+
+    if (pronoun === "они") {
+      return "терпят";
+    }
+  }
+
+   // Условие для исключений
+   if (verb === "вертеть") {
+    if (pronoun === "я") {
+      return "верчу";
+    }
+
+    if (pronoun === "ты") {
+      return "вертишь";
+    }
+
+    if (pronoun === "он") {
+      return "вертит";
+    }
+
+    if (pronoun === "она") {
+      return "вертит";
+    }
+
+    if (pronoun === "мы") {
+      return "вертим";
+    }
+
+    if (pronoun === "вы") {
+      return "вертите";
+    }
+
+    if (pronoun === "они") {
+      return "вертят";
+    }
+  }
+
+   // Условие для исключений
+   if (verb === "смотреть") {
+    if (pronoun === "я") {
+      return "смотрю";
+    }
+
+    if (pronoun === "ты") {
+      return "смотрешь";
+    }
+
+    if (pronoun === "он") {
+      return "смотрит";
+    }
+
+    if (pronoun === "она") {
+      return "смотрит";
+    }
+
+    if (pronoun === "мы") {
+      return "смотрим";
+    }
+
+    if (pronoun === "вы") {
+      return "смотрите";
+    }
+
+    if (pronoun === "они") {
+      return "смотрят";
+    }
+  }
+
+   // Условие для исключений
+   if (verb === "видеть") {
+    if (pronoun === "я") {
+      return "вижу";
+    }
+
+    if (pronoun === "ты") {
+      return "видишь";
+    }
+
+    if (pronoun === "он") {
+      return "видит";
+    }
+
+    if (pronoun === "она") {
+      return "видит";
+    }
+
+    if (pronoun === "мы") {
+      return "видим";
+    }
+
+    if (pronoun === "вы") {
+      return "видите";
+    }
+
+    if (pronoun === "они") {
+      return "видят";
+    }
+  }
+
+   // Условие для исключений
+   if (verb === "ненавидеть") {
+    if (pronoun === "я") {
+      return "ненавижу";
+    }
+
+    if (pronoun === "ты") {
+      return "ненавидишь";
+    }
+
+    if (pronoun === "он") {
+      return "ненавидит";
+    }
+
+    if (pronoun === "она") {
+      return "ненавидит";
+    }
+
+    if (pronoun === "мы") {
+      return "ненавидим";
+    }
+
+    if (pronoun === "вы") {
+      return "ненавидите";
+    }
+
+    if (pronoun === "они") {
+      return "ненавидят";
+    }
+  }
+
+   // Условие для исключений
+   if (verb === "зависеть") {
+    if (pronoun === "я") {
+      return "завишу";
+    }
+
+    if (pronoun === "ты") {
+      return "зависишь";
+    }
+
+    if (pronoun === "он") {
+      return "зависит";
+    }
+
+    if (pronoun === "она") {
+      return "зависит";
+    }
+
+    if (pronoun === "мы") {
+      return "зависим";
+    }
+
+    if (pronoun === "вы") {
+      return "зависите";
+    }
+
+    if (pronoun === "они") {
+      return "зависят";
     }
   }
 
