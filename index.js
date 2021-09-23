@@ -311,6 +311,37 @@ function verbs(verb, pronoun) {
     }
   }
 
+   // Условие для исключений
+   if (verb === "смотреть") {
+    if (pronoun === "я") {
+      return "смотрю";
+    }
+
+    if (pronoun === "ты") {
+      return "смотришь";
+    }
+
+    if (pronoun === "он") {
+      return "смотрит";
+    }
+
+    if (pronoun === "она") {
+      return "смотрит";
+    }
+
+    if (pronoun === "мы") {
+      return "смотрим";
+    }
+
+    if (pronoun === "вы") {
+      return "смотрите";
+    }
+
+    if (pronoun === "они") {
+      return "смотрят";
+    }
+  }
+
   // Условие для исключений
   if (verb === "держать" || verb === "дышать" || verb === "слышать") {
     if (pronoun === "я") {
@@ -341,7 +372,7 @@ function verbs(verb, pronoun) {
       return verb2 + "ат";
     }
   }
-
+  // Глаголы первого спряжения
   if (
     verbEnd === "ать" ||
     verbEnd === "еть" ||
@@ -379,6 +410,8 @@ function verbs(verb, pronoun) {
       return verb2 + "ают";
     }
   }
+
+  // Глаголы первого спряжения (кроме брить и стелить)
 
   if (verbEnd === "ить") {
     if (pronoun === "я") {
