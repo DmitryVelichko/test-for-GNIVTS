@@ -1,3 +1,10 @@
 #area {
     border: 1px solid black;
 }
+
+.wrapper {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 250px;
+}
