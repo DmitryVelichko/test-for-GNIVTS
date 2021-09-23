@@ -10,14 +10,30 @@ const input1 = document.querySelector('.input-1');
 const input2 = document.querySelector('.input-2');
 
 
-
 btn.addEventListener("click", () => {
   alert(verbs(input1.value, input2.value));
+});
+
+
+input1.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+  alert(verbs(input1.value, input2.value));
+  };
+});
+
+input2.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+  alert(verbs(input1.value, input2.value));
+  };
 });
 
 function verbs(verb, pronoun) {
   let verbEnd = verb.slice(-3, verb.length);
   let verb2 = verb.slice(0, -3);
+
+  if (verb === "" || pronoun === "") {
+    alert("Заполните поле!");
+  }
 
   if (
     verbEnd === "ать" ||
