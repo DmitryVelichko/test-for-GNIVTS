@@ -8,11 +8,18 @@
     <title>Document</title>
   </head>
   <body>
+
+    <canvas id="area" width=1300 height=500></canvas>
+
+    <input type="text" placeholder="Ваш глагол: ">
+    <button></button>
+
+
     <script src="index.js"></script>
 
     <script>
       var b = 0.55191502449;
-      var damages_canvas = document.getElementById("damages-area");
+      var damages_canvas = document.getElementById("area");
       var ctx_damages = damages_canvas.getContext("2d");
       var circle_rect = damages_canvas.getBoundingClientRect();
       var circles = [];
