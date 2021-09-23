@@ -6,8 +6,13 @@
 
 const btn = document.querySelector(".btn");
 
+const input1 = document.querySelector('.input-1');
+const input2 = document.querySelector('.input-2');
+
+
+
 btn.addEventListener("click", () => {
-  alert(verbs("делать", "я"));
+  alert(verbs(input1.value, input2.value));
 });
 
 function verbs(verb, pronoun) {
