@@ -1,5 +1,6 @@
 #area {
     border: 1px solid black;
+    margin: 10px 10px;
 }
 
 .wrapper {
@@ -16,6 +17,13 @@ input {
 h1 {
     display: inline-block;
     width: 500px;
+    margin: 10px 10px;
+}
+
+h3 {
+    display: inline-block;
+    width: 1000px;
+    margin: 10px 10px;
 }
 
 .btn {
