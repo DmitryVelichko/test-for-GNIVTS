@@ -76,5 +76,5 @@ function verbs(verb, pronoun) {
     
   }
   
-  verbs("сушить", "я");
+  alert(verbs("сушить", "я"));
   
