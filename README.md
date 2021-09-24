@@ -1,6 +1,6 @@
-Здравствуйте! 
+Здравствуйте, Сергей! 
 
-Посмотреть задание онлайн: https://dmitryvelichko.github.io/test-for-GNIVTS/
+Посмотреть задание онлайн можно тут: https://dmitryvelichko.github.io/test-for-GNIVTS/
 
 ![image](https://user-images.githubusercontent.com/42185328/134558269-cd351b9c-8b5c-4768-8f80-a636c4256223.png)
 
