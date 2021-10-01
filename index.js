@@ -1,4 +1,5 @@
-const arr = [[2,1,3], [3,2,1]]
+const arr = [[2,1,3,0], 
+             [7,5,6,4]]
 
 const sortMatrix = (arr) => {
 
@@ -7,15 +8,19 @@ const sortMatrix = (arr) => {
   const sortedArr = flattenedArr.sort((a, b) => a - b);
 
   
-  const rowsCount = arr.length;
-  const colsCount = arr[0].length;
+  const rowsNum = arr.length;
+  const columnsNum = arr[0].length;
   const result = [];
 
-  for (let i = 0; i < rowsCount; i++) {
+  for (let i = 0; i < rowsNum; i++) {
     const newRow = [];
+    console.log("1for- " + newRow);
+    console.log("i " + i)
 
-    for (let j = 0; j < colsCount; j++) {
-      newRow.push(sortedArr[j * rowsCount + i]);
+    for (let j = 0; j < columnsNum; j++) {
+      newRow.push(sortedArr[j * rowsNum + i]);
+      console.log('2for- ' + newRow)
+      console.log("j " + j)
     }
 
     result.push(newRow);
@@ -26,5 +31,5 @@ const sortMatrix = (arr) => {
 
 const result = sortMatrix(arr);
 
-
+console.log(result)
 
