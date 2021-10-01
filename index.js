@@ -19,3 +19,5 @@ const sortMatrix = (arr) => {
   return result;
 };
 
+const result = sortMatrix(arr);
+
