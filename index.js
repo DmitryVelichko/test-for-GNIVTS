@@ -12,11 +12,14 @@ const sortMatrix = (arr) => {
   const columnsNum = arr[0].length;
   const result = [];
 
+
+    // Внешний цикл for
   for (let i = 0; i < rowsNum; i++) {
     const newRow = [];
     console.log("1for- " + newRow);
     console.log("i " + i)
 
+// Внутренний цикл for
     for (let j = 0; j < columnsNum; j++) {
       newRow.push(sortedArr[j * rowsNum + i]);
       console.log('2for- ' + newRow)
