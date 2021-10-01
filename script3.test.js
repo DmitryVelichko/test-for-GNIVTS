@@ -18,6 +18,13 @@ describe('sortMatrix', () => {
     expect(sortMatrix(input)).toStrictEqual(output);
   });
 
-
+  it('should correct sort 2d rectangular array', () => {
+    const input = [
+      [1, 4, 6, 12],
+      [5, 3, 9, 11],
+      [2, 8, 7, 10],
+    ];
+  
+  });
 });
 
