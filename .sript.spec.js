@@ -17,5 +17,10 @@ it('should return "Delayed print"', () => {
     expect(sleep()).resolves.toBe('Delayed print')
 });
 
-
+it('should return Promise after 1 sec', async () => {
+    const start = new Date();
+    await sleep(1000);
+    const end = new Date()
+    expect(end - start).toBeCloseTo(1000, -2);
+});
 });
