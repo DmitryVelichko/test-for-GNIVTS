@@ -1,4 +1,8 @@
-const sleep = (time) => {
-  new Promise(resolve => setTimeout(() => resolve('Delayed print'), time))
+const sleep = (seconds) => {
+  new Promise((res) => setTimeout(res, seconds));
 }
-export default sleep;
+
+async function delayPrint() {
+  await sleep(1000);
+  console.log("Delayed print");
+}
