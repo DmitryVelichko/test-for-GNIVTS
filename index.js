@@ -8,3 +8,5 @@ async function delayPrint() {
 }
 
 export default sleep;
+
+export { delayPrint };
