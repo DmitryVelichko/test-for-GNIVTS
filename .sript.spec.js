@@ -13,5 +13,9 @@ it('should return Promise', () => {
     expect(sleep(1000)).toBeInstanceOf(Promise);
 });
 
+it('should return "Delayed print"', () => {
+    expect(sleep()).resolves.toBe('Delayed print')
+});
+
 
 });
