@@ -9,5 +9,9 @@ describe("Function sleep", () => {
     expect(typeof sleep).toBe('function');
 });
 
+it('should return Promise', () => {
+    expect(sleep(1000)).toBeInstanceOf(Promise);
+});
+
 
 });
