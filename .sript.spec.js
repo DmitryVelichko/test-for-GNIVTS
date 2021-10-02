@@ -26,7 +26,12 @@ describe("Function sleep", () => {
 });
 
 describe("Функция sleep", () => {
-  it("должна вернуть promise", () => {
+  it("must return promise", () => {
     expect(sleep(1000)).resolves;
+  });
+
+  it('must return string with delay', async () => {
+    const data = await delayPrint();
+    expect(data).toBe('print');
   });
 });
