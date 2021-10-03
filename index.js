@@ -6,7 +6,11 @@
     {
        // loop for rows of matrix
        for (let i = 0; i < m.length; i++) {
-  
+  // loop for column of matrix
+  for (let j = 0; j < m[i].length; j++) {
+
+   
+}
         
     }
 
