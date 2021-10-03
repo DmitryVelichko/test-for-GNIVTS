@@ -9,7 +9,10 @@
   // loop for column of matrix
   for (let j = 0; j < m[i].length; j++) {
 
-   
+    // loop for comparison and swapping
+    for (let k = 0; k < m[i].length - j - 1; k++) {
+        
+    }
 }
         
     }
