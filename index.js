@@ -49,5 +49,5 @@
             return 0;
         });
         
-       
+        console.log(numbers);
  </script>
