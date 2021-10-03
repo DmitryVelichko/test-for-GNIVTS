@@ -4,7 +4,11 @@
  
     function sortRowWise(m)
     {
-     
+       // loop for rows of matrix
+       for (let i = 0; i < m.length; i++) {
+  
+        
+    }
 
     // printing the sorted matrix
     for (let i = 0; i < m.length; i++) {
