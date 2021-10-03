@@ -42,5 +42,6 @@
                        [ 6, 3, 1, 2 ]];
          sortRowWise(m);
   
- // This code is contributed by sanjoy_62.
+         let numbers = [0, 1 , 2, 3, 10, 20, 30 ];
+        
  </script>
