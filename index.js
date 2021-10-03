@@ -4,7 +4,16 @@
  
     function sortRowWise(m)
     {
-       
+     
+
+    // printing the sorted matrix
+    for (let i = 0; i < m.length; i++) {
+        for (let j = 0; j < m[i].length; j++)
+            document.write(m[i][j] + " ");
+        document.write("<br/>");
+    }
+
+    return 0;
     }
  
 // Driver code
