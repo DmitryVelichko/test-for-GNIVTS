@@ -46,3 +46,10 @@ class Employee extends Person {
         this.position = position
       }
   }
+
+  const emp = new Employee(3, 'Shawn', 'Developer')
+
+// Generics
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items)
+}
