@@ -16,3 +16,8 @@ interface PersonInterface {
     register(): string
   }
   
+  // Classes
+  class Person implements PersonInterface {
+    id: number
+    name: string
+  
