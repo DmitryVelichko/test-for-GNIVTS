@@ -1,5 +1,7 @@
-const a:number = 2;
+// alias
 
-console.log(a);
+type Status = 'idle' | 'loading' | 'response'; // union
 
-let myStatus: 'idle' | 'loading' | 'response' = "idle";
+let myStatus: Status = "idle";
+
+let y: (number | string) = 1;
