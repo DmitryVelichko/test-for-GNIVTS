@@ -1,27 +1,35 @@
 // alias
 
-type Status = 'idle' | 'loading' | 'response'; // union
+type Status = "idle" | "loading" | "response"; // union
 
 let myStatus: Status = "idle";
 
-let y: (number | string) = 1;
+let y: number | string = 1;
 
-const b: number[] = [1,2,3];
+const b: number[] = [1, 2, 3];
 
-const c = [1,2,3,'dfdf'];
+const c = [1, 2, 3, "dfdf"];
 
 interface PersonInterface {
-    id: number
-    name: string
-    register(): string
+  id: number;
+  name: string;
+  register: string;
+ 
+}
+
+// Classes
+class Person implements PersonInterface {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
   }
-  
-  // Classes
-  class Person implements PersonInterface {
-    id: number
-    name: string
+
+
+register() {
+    return `${this.name} is now registered`
   }
-    constructor(id: number, name: string) {
-        this.id = id
-        this.name = name
+
 }
