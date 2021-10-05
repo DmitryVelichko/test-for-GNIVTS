@@ -15,3 +15,5 @@ const sortOfDictrict = _.sortBy(geo,  (geo) => {
 });
 
 
+console.log(listOfCaption);
+console.log(federalDistricts);
