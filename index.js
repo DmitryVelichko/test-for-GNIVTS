@@ -1,2 +1,1 @@
-var a = 2;
-console.log(a);
+const _ = require('lodash');
