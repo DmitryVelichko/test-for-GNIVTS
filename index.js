@@ -17,3 +17,5 @@ const sortOfDictrict = _.sortBy(geo,  (geo) => {
 
 console.log(listOfCaption);
 console.log(federalDistricts);
+console.log(numberOfDistricts);
+console.log(sortOfDictrict);
