@@ -8,3 +8,5 @@ const federalDistricts = _.reduce(geo, (acc, cur) => {
 	return acc;
 }, {});
 
+const numberOfDistricts = _.size(geo);
+
