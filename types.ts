@@ -19,3 +19,10 @@ type Region = {
     caption: string;
     value: number;
   };
+
+  type District = {
+    code: string;
+    caption: string;
+    value: number;
+    subitems: Subitem[];
+  };
