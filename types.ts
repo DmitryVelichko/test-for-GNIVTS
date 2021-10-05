@@ -26,3 +26,17 @@ type Region = {
     value: number;
     subitems: Subitem[];
   };
+
+  
+  type Year = {
+    country: Country;
+    districts: District[];
+    regions: District[];
+  };
+  
+  export type Incomings = {
+    2019: Year;
+    2020: Year;
+  };
+  
+  export type Geo = Area[];

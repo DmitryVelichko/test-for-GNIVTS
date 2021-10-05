@@ -27,11 +27,6 @@ class Person implements PersonInterface {
     this.name = name;
   }
 
-
-register() {
-    return `${this.name} is now registered`
-  }
-
 }
 
 const brad = new Person(1, 'Brad Traversy')
@@ -57,4 +52,3 @@ function getArray<T>(items: T[]): T[] {
 let numArray = getArray<number>([1, 2, 3, 4])
 let strArray = getArray<string>(['brad', 'John', 'Jill'])
 
-strArray.push(1) // Throws error
