@@ -10,3 +10,8 @@ const federalDistricts = _.reduce(geo, (acc, cur) => {
 
 const numberOfDistricts = _.size(geo);
 
+const sortOfDictrict = _.sortBy(geo,  (geo) => {
+	return geo.code
+});
+
+
