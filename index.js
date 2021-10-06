@@ -32,3 +32,11 @@ console.log(createRegionsObj());
 
 // Сформировать отчет report2020 в виде объекта, где ключ - название региона, а значение - число из ключа value
 
+const createReport = () => {
+	
+  };
+  
+  // Отчет report2020
+  
+  const report2020 = createReport();
+  
