@@ -39,6 +39,8 @@ const createReport = () => {
 	  return (obj[item.code] = item.value);
 	});
   
+	const finalObj = {};
+  
 	
   };
   
