@@ -19,7 +19,11 @@ console.log(createFederalDistricsObj());
 const createRegionsObj = () => {
   const obj = {};
 
- 
+  _.forEach(geo, (item) => {
+    return _.forEach(item.regions, (item) => {
+      return (obj[item.code] = item.caption);
+    });
+  });
 
   return obj;
 };
