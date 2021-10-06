@@ -45,7 +45,7 @@ const createReport = () => {
 		if (regions[key]) {
 		  finalObj[regions[key]] = obj[key];
 		} else {
-		  
+			finalObj[key] = obj[key];
 		}
 	  }
 	
