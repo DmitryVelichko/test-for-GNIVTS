@@ -12,4 +12,35 @@ const createFederalDistricsObj = () => {
 	return obj;
   };
   
+  console.log(createFederalDistricsObj()); 
+
+   
+
+   
+
+  // Из массива geo сделать объект "Регионы" - также ключ code, значение - название региона 
+
+  const createRegionsObj = () => { 
+
+    const obj = {}; 
+
+    _.forEach(geo,  (item) => { 
+
+      return _.forEach(item.regions, (item) => { 
+
+        return (obj[item.code] = item.caption); 
+
+      }); 
+
+    }); 
+
+    return obj; 
+
+  }; 
+
+
+  console.log(createRegionsObj()); 
+
+   
+
   
