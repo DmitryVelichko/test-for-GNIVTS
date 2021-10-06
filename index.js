@@ -33,6 +33,12 @@ console.log(createRegionsObj());
 // Сформировать отчет report2020 в виде объекта, где ключ - название региона, а значение - число из ключа value
 
 const createReport = () => {
+	const obj = {};
+  
+	_.forEach(incomings["2020"].regions, function (item) {
+	  return (obj[item.code] = item.value);
+	});
+  
 	
   };
   
