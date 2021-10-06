@@ -41,7 +41,15 @@ const createReport = () => {
   
 	const finalObj = {};
   
+	for (var key in obj) {
+		if (regions[key]) {
+		  finalObj[regions[key]] = obj[key];
+		} else {
+		  
+		}
+	  }
 	
+	  return finalObj;
   };
   
   // Отчет report2020
