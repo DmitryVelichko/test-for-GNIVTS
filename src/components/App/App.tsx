@@ -1,34 +1,19 @@
-import React, { FC, useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import '@ff/ui-kit/lib/styles/fns.theme.css';
 
-import Posts from '../Posts';
-import { posts as data, Post } from '../../data/posts';
+import Home from '../routes/Home';
+import classes from './App.module.scss';
 
-const App: FC = () => {
-  const [posts, setPosts] = useState<Post[]>(data);
+const NotFound = React.lazy(() => import('../routes/NotFound'));
 
-  const [isVisible, setVisible] = useState(true);
-  const [isHidden, setHidden] = useState(false);
-
-  useEffect(() => {
-    axios
-      .get('https://jsonplaceholder.typicode.com/posts?_limit=10')
-      .then((res) => {
-        setPosts(res.data);
-      });
-  }, []);
-
-  const isButtonToggle = () => {
-    setVisible(!isVisible);
-    setHidden(!isHidden);
-  };
-
-  return (
-    <>
-      <button type="button" onClick={isButtonToggle}>{isHidden ? 'показать' : 'скрыть'}</button>
-      {isVisible && (<Posts data={posts} />)}
-    </>
-  );
-};
+const App: React.FC = () => (
+  <div className={classes.component}>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="*" component={NotFound} />
+    </Switch>
+  </div>
+);
 
 export default App;
