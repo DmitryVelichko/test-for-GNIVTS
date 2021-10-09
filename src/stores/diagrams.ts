@@ -17,7 +17,10 @@ class Diagrams {
       const randomValue = Math.round(Math.random() * 100);
       const randomColor = `#${Math.random().toString(16).slice(2, 8)}`;
 
-     
+      this.chartData.push(new DiagramValue({
+        value: randomValue,
+        color: randomColor,
+      }));
     });
   }
 }
