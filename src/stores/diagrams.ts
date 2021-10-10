@@ -11,7 +11,14 @@ class Diagrams {
     this.setRandomData();
   }
 
- 
+  setRandomData() {
+    _.times(4, (i) => {
+      const randomValue = Math.round(Math.random() * 100);
+      const randomColor = `#${Math.random().toString(16).slice(2, 8)}`;
+
+      
+    });
+  }
   
 }
 
