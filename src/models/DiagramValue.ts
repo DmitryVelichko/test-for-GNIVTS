@@ -4,7 +4,7 @@ export default class DiagramValue {
 
   constructor(data: { value: number; color: string }) {
     this.value = data.value;
-   
+    this.color = data.color;
   }
  
 }
