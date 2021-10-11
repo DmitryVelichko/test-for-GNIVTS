@@ -8,4 +8,14 @@
     font-family: Roboto, sans-serif;
   }
   
+  .wrapper {
+    display: flex;
+    // align-content:center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:stretch;
+  }
+  
+  
   
