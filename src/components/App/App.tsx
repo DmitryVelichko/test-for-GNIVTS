@@ -17,6 +17,20 @@ const App: FC = () => {
   const [isError, setError] = useState(false);
   const [isView, setView] = useState('list');
 
+  const handleSearch: React.ChangeEventHandler<HTMLInputElement> = (e) => setSearch(e.target.value);
+
+  useEffect(() => {
+    axios
+      .get('https://jsonplaceholder.typicode.com/posts?_limit=5')
+      .then((res) => {
+        setPosts(res.data);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError(true);
+      });
+  }, []);
+
   
 };
 
