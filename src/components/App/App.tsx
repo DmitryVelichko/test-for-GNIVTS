@@ -31,7 +31,17 @@ const App: FC = () => {
       });
   }, []);
 
-  
+  if (isError) return <Error />;
+  if (isLoading) return <Loading />;
+
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.btns}>
+        <button className={classes.button} type="button" value="list" onClick={() => setView('list')}>Список</button>
+        <button className={classes.button} type="button" value="table" onClick={() => setView('table')}>Таблица</button>
+      </div>
+
+     
 };
 
 export default App;
