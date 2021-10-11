@@ -13,7 +13,11 @@ import Table from '../Table';
 const App: FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [search, setSearch] = useLocalStorage('search', '');
- 
+  const [isLoading, setLoading] = useState(true);
+  const [isError, setError] = useState(false);
+  const [isView, setView] = useState('list');
+
+  
 };
 
 export default App;
