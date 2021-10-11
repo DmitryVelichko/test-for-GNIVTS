@@ -11,7 +11,9 @@ import { useLocalStorage } from '../../hook';
 import Table from '../Table';
 
 const App: FC = () => {
-  
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [search, setSearch] = useLocalStorage('search', '');
+ 
 };
 
 export default App;
