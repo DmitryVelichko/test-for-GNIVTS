@@ -1,9 +1,9 @@
-import 'expect-puppeteer';
+import "expect-puppeteer";
 
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer");
 
-describe('/', () => {
-  const pageURL = 'http://localhost:3000/';
+describe("/", () => {
+  const pageURL = "http://localhost:3000/";
   let page: any;
 
   beforeAll(async () => {
@@ -12,5 +12,12 @@ describe('/', () => {
     await page.goto(pageURL);
   });
 
- 
+  it('should have "Добро пожаловать!"', async () => {
+    const title = await page.$("p");
+    const html = await page.evaluate(
+      (pHandle: { innerHTML: any }) => title.innerHTML,
+      title
+    );
+    expect(html).toBe("Добро пожаловать!");
+  });
 });
