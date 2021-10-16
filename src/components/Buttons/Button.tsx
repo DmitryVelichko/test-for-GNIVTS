@@ -48,4 +48,11 @@ const Button: React.FC<ButtonProps> = (props) => {
   );
 };
 
+Button.defaultProps = {
+  type: 'button',
+  children: 'click me',
+  isLoading: false,
+  isDisabled: false,
+};
+
 
