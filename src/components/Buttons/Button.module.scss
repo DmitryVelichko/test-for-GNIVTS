@@ -25,7 +25,15 @@ $mainColor: white;
     color: green;
   }
 } 
+.active {
+  cursor: grab;
+  pointer-events: none;
+ }
 
+ .disabled {
+  cursor: default;
+  pointer-events: none;
+ }
  
 
 
