@@ -29,4 +29,23 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = (props) => {
   const { type, onClick, children, isDisabled, isLoading, isActive } = props;
 
-  
+  const mainClass = cn({
+    [classes.btn]: true,
+    [classes.disabled]: isDisabled,
+    [classes.active]: isActive,
+    loading: isLoading,
+  });
+
+  return (
+    <button
+      className={mainClass}
+      type={type}
+      onClick={onClick}
+      style={ButtonStyles}
+    >
+      {children}
+    </button>
+  );
+};
+
+
