@@ -55,4 +55,9 @@ Button.defaultProps = {
   isDisabled: false,
 };
 
+Button.displayName = 'Button';
 
+export default Button;
+
+const ButtonStyles: CSSProperties = {
+};
