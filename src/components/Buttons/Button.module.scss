@@ -17,4 +17,15 @@ $mainColor: white;
     background-color: darken($mainColor, 50%);
   }
 
+  @media (min-width: 768px) {
+    color: red;
+  }
+
+  @media (min-width: 1024px) {
+    color: green;
+  }
+} 
+
  
+
+
