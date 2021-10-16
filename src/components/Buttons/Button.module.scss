@@ -11,4 +11,10 @@ $mainColor: white;
   border-radius: 15;
   border-width: 4mm;
   outline: none;
-}
+  color: black;
+  cursor: progress;
+  &:hover {
+    background-color: darken($mainColor, 50%);
+  }
+
+ 
