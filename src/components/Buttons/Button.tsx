@@ -17,3 +17,12 @@ const Button: FC<ButtonProps> = ({modal, setModal}) => {
 }
 */
 
+type ButtonProps = {
+  type?: 'button' | 'reset' | 'submit';
+  onClick?: () => void;
+  children?: React.ReactNode;
+  isDisabled?: boolean;
+  isLoading?: boolean;
+  isActive?: boolean;
+};
+
