@@ -26,3 +26,7 @@ type ButtonProps = {
   isActive?: boolean;
 };
 
+const Button: React.FC<ButtonProps> = (props) => {
+  const { type, onClick, children, isDisabled, isLoading, isActive } = props;
+
+  
