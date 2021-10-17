@@ -1,2 +1,0 @@
-# natalya-kolyshkina-web
-
