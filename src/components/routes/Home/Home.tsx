@@ -13,6 +13,23 @@ const Home: React.FC = () => {
   const [activeTab, setActiveTab] = useState('list');
   const [search, setSearch] = useLocalStorage('search', '');
 
-}
+  useEffect(() => {
+    setUsers(postsArr);
+  }, []);
+
+  const tableCols = [
+    { type: 'id', label: 'Id' },
+    { type: 'name', label: 'Name' },
+    { type: 'email', label: 'Еmail' },
+  ];
+
+  
+};
+
+export type UsersTypes = {
+  id: number;
+  name: string;
+  email: string;
+};
 
 export default Home;
