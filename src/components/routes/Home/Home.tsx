@@ -8,4 +8,11 @@ import useLocalStorage from '../../../hooks/useLocalStorage';
 import classes from './Home.module.scss';
 import { postsArr } from '../../../data/postsArr';
 
+const Home: React.FC = () => {
+  const [users, setUsers] = useState<UsersTypes[]>([]);
+  const [activeTab, setActiveTab] = useState('list');
+  const [search, setSearch] = useLocalStorage('search', '');
 
+}
+
+export default Home;
