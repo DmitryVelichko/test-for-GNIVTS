@@ -23,7 +23,26 @@ const Home: React.FC = () => {
     { type: 'email', label: 'Еmail' },
   ];
 
-  
+  const tabs = [
+    { id: 'list', label: 'Список' },
+    { id: 'table', label: 'Таблица' },
+    { id: 'graph', label: 'Graph' },
+  ];
+
+  return (
+    <Main>
+      <div className={classes.content}>
+        <Search search={search} setSearch={setSearch} />
+        <Tabs tabs={tabs} setActiveTab={setActiveTab} />
+        <TabContent
+          activeTab={activeTab}
+          tabsContent={users}
+          tableCols={tableCols}
+          search={search}
+        />
+      </div>
+    </Main>
+  );
 };
 
 export type UsersTypes = {
