@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import classes from './Container.module.scss';
+import classes from './Container.module.scss'
 
-const Container: React.FC = (props) => (
+const Container: React.FC = props => (
+  <div className={classes.component}>{props.children}</div>
+)
 
-);
-
-export default Container;
+export default Container
