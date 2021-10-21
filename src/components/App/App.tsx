@@ -14,7 +14,8 @@ const App: React.FC = () => (
 
     <Switch>
       <Route exact path="/" component={Home} />
-      
+      <Route exact path="/about" component={About} />
+      <Route path="*" component={NotFound} />
     </Switch>
   </div>
 );
