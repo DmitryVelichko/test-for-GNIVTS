@@ -9,7 +9,14 @@ import classes from './App.module.scss';
 const NotFound = React.lazy(() => import('../routes/NotFound'));
 
 const App: React.FC = () => (
-  
+  <div className={classes.component}>
+    <Header />
+
+    <Switch>
+      <Route exact path="/" component={Home} />
+      
+    </Switch>
+  </div>
 );
 
 export default App;
