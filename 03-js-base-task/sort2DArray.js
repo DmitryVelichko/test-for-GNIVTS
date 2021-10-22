@@ -24,6 +24,18 @@ module.exports = function sort2DArray(arr) {
 
     console.log("i " + i);
 
-    
+    // Внутренний цикл for
+    for (let j = 0; j < columnsNum; j++) {
+      newRow.push(sortedArr[j * rowsNum + i]);
+
+      console.log("2for- " + newRow);
+
+      console.log("j " + j);
+    }
+
+    result.push(newRow);
+  }
+
+  return result;
 };
 
