@@ -1,0 +1,20 @@
+
+{
+  "name": "04-js-base-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.2.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dev.gnivc.ru/gnivc-edu/dmitry-velichko-web.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
