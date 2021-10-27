@@ -1,0 +1,26 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@types/lodash": "^4.14.175",
+    "axios": "^0.22.0",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.1.16",
+    "jest": "^27.2.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dev.gnivc.ru/gnivc-edu/dmitry-velichko-web.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
