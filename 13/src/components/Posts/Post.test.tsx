@@ -3,21 +3,17 @@ import { render, screen } from '@testing-library/react';
 
 import Post from './Post';
 
-describe('Post component works correctly', () => {
-  it('Post render', () => {
+describe('Post component', () => {
+  it('Post renders', () => {
     render(<Post title="Title 1" />);
-
-    // screen.debug();
-    // screen.getByText('Title 1')
-    // screen.getByRole('heading')
 
     expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(screen.getByText('Title 1')).toBeInTheDocument();
     expect(screen.getByText(/Title/)).toBeInTheDocument();
   });
-  it('Post render with body', () => {
-    render(<Post title="Title 1" body="123" />);
+  it('Post renders with body', () => {
+    render(<Post title="Title 1" body="check" />);
 
-    expect(screen.getByText('123')).toBeInTheDocument();
+    expect(screen.getByText('check')).toBeInTheDocument();
   });
 });

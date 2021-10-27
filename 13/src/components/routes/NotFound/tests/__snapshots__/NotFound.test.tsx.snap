@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound component snapshot matches 1`] = `
+<h1>
+  Страница не найдена.
+</h1>
+`;
+
+exports[`Компонент NotFound snapshot совпадает 1`] = `
+<h1>
+  Страница не найдена.
+</h1>
+`;

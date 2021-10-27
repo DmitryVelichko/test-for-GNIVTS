@@ -6,12 +6,5 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
-        <App />
-      </Suspense>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root'),
+  <App />, document.getElementById('root'),
 );

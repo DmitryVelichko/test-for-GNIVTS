@@ -8,7 +8,7 @@ export type PostsProps = {
 };
 
 const Posts: FC<PostsProps> = (props) => {
-  const { data, search = ' ' } = props;
+  const { data, search = '' } = props;
   const [filtered, setFiltered] = useState<PostProps[]>(data);
 
   useEffect(() => {

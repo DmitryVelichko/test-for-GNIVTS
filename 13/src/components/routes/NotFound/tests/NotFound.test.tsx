@@ -6,18 +6,18 @@ import NotFoundRoute from '../NotFound';
 
 const renderComponent = () => render(<NotFoundRoute />);
 
-describe('Компонент NotFound', () => {
-  it('snapshot совпадает', () => {
+describe('NotFound component', () => {
+  it('snapshot matches', () => {
     const tree = renderer.create(<NotFoundRoute />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it('компонент отображается без ошибок', () => {
+  it('component renders fine', () => {
     expect(renderComponent).not.toThrow();
   });
 
-  it('содержит нужный текст', () => {
+  it('has text', () => {
     renderComponent();
 
     expect(screen.getByText(/Страница не найдена/i)).toBeInTheDocument();

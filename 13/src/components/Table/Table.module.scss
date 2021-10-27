@@ -1,0 +1,52 @@
+.table {
+    table {
+        .thead {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .table {
+            border-collapse: separate;
+            padding: 10px;
+            width: 1000px;
+            height: 500px;
+            margin-left: 200px;
+        }
+      padding: 10px;
+      width: 1000px;
+      height: 500px;
+  
+      tbody {
+        tr {
+          background-color: white;
+          &:nth-of-type(odd) {
+            background-color: lightblue;
+          }
+          td {
+            padding: 4px 12px;
+            border: 1px solid black;
+  
+            &:first-of-type {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .thead {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.table {
+    border-collapse: separate;
+    padding: 10px;
+    width: 1000px;
+    height: 500px;
+  
+}
