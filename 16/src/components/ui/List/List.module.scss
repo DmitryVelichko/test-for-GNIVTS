@@ -1,0 +1,15 @@
+.list_item {
+  display: flex;
+  width: 800px;
+  justify-content: flex-start;
+  align-items: center;
+
+  .id, .name, .email {
+    padding: 5px 15px;
+  }
+
+  .id {
+    font-weight: bold;
+  }
+
+}
