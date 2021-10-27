@@ -1,0 +1,23 @@
+.thead {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: lightblue; 
+}
+
+.td {
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid lightblue;
+    width: 50%;
+}
+
+.table {
+    
+    border-collapse: collapse;
+    border: 3px solid lightblue;
+    margin: 15px 20px;
+    width: 700px;
+}
+
+tr:nth-child(even) { background-color: lightblue; }
