@@ -1,4 +1,4 @@
-Homework tasks made during the internship at Main Scientific Innovation and Implementation Center (https://gnivc.ru/)
+Homework tasks made during the internship at Main Scientific Innovation and Implementation Center.
 
 
 02-js-base-task
